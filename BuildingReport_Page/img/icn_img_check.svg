@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="98px" viewBox="0 0 98 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icn_img_check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.6%" y="-2.3%" width="107.2%" height="105.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BVPE_Ph-RemUnlock_RP_Desktop_v1" transform="translate(-671.000000, -96.000000)">
+            <g id="Card_Results_checked" filter="url(#filter-1)" transform="translate(525.000000, 60.000000)">
+                <g id="icn_img_check" transform="translate(147.000000, 36.000000)">
+                    <circle id="path-1" stroke="#FFFFFF" stroke-width="6" fill="#5CB85C" cx="47.7380926" cy="47.7380926" r="44.7380926"></circle>
+                    <path d="M41.8470847,68.6766759 C40.4897965,68.6766759 39.1958982,68.085469 38.3084406,67.0510896 L27.1219999,54.0166069 C25.4468304,52.0642276 25.6733559,49.1258827 27.6281864,47.4528138 C29.5820847,45.7778827 32.5241186,46.0041241 34.2002203,47.9574345 L41.5133559,56.4791931 L64.6264067,28.6421931 C68.2042033,23.6360207 71.9497965,26.4077103 68.3552203,31.4352965 L45.6402203,66.7270896 C44.8077626,67.8918138 43.484966,68.6087103 42.0531016,68.6720207 C41.9841186,68.6748138 41.9160677,68.6766759 41.8470847,68.6766759" id="Fill-4811" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

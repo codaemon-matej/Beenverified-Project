@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Searching Background Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+
+     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @-moz-document url-prefix() {
+            section.active .left-side {
+                top: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body data-next-page="<%=next_page%>" class="hide">
+    <!-- Header -->
+    <header id="header" class="bg-fff loading-page">
+      <nav class="navbar navbar-default navbar-static-top">
+        <!-- Mobile Loader -->
+        <div class="visible-xs xs-progress-bar">
+          <div id="search-main-progress" class="progress-wrap">
+            <div class="progress">
+              <div class="progress-bar bar" role="progressbar" aria-valuemin="5" aria-valuemax="100"
+                style="width: 1%">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Mobile Loader -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="navbar-header">
+                <div class="navbar-logo">
+                  <a href="//www.beenverified.com"><img src="img/SVGs/BV-Logo.svg" alt="img/SVGs/BV-Logo.svg" /></a>
+                </div>
+                <p class="cheaters-nav">CHEATERS BEWARE</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <div class="searching-title-wrap searching-title-wrap-sm" data-fr-bind="bv_searchData">
+                      <h1>Learning about:<br class="visible-xs"> <span>{{formattedPhoneNumber}}</span></h1>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container body-container" id="main-layout">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <div id="search-main-progress" class="progress-wrap hidden-xs">
+                    <div class="progress">
+                        <div class="progress-bar bar" role="progressbar" aria-valuemin="5" aria-valuemax="100" style="width: 1%">
+                        </div>
+                    </div>
+                    <div class="progress-point">
+                        <div class="point point1"><span><i class="fa fa-circle" aria-hidden="true"></i></span></div>
+                        <div class="point point1"><span><i class="fa fa-circle" aria-hidden="true"></i></span></div>
+                        <div class="point point1"><span><i class="fa fa-circle" aria-hidden="true"></i></span></div>
+                        <div class="point point1"><span><i class="fa fa-circle" aria-hidden="true"></i></span></div>
+                        <div class="point point1"><span><i class="fa fa-circle" aria-hidden="true"></i></span></div>
+                    </div>
+                </div>
+
+                <div id="socialCountBox" class="clearfix" data-fr-bind="fullTeaser">
+                    <div id="notificationBox" class="clearfix">
+                        <div id="social-popup" class="notification">
+                            <img class="notification-icon" src="img/SVGs/icn_img_social.svg" alt="">
+                            <span>{{socialCount}}<span class="hidden-xs"> social account<span class="notify-multiple">s</span></span><span class="notify-text"> found</span></span>
+                        </div>
+                        <div id="email-popup" class="notification">
+                            <img class="notification-icon" src="img/SVGs/icn_img_email.svg" alt="">
+                            <span>{{emailCount}}<span class="hidden-xs"> email<span class="notify-multiple">s</span></span><span class="notify-text"> found</span></span>
+                        </div>
+                        <div id="photos-popup" class="notification">
+                            <img class="notification-icon" src="img/SVGs/icn_img_photos.svg" alt="">
+                            <span>{{photoCount}}<span class="hidden-xs"> photo<span class="notify-multiple">s</span></span><span class="notify-text"> found</span></span>
+                        </div>
+                        <div id="phone-popup" class="notification">
+                            <img class="notification-icon" src="img/SVGs/icn_img_phone.svg" alt="">
+                            <span>{{phoneCount}}<span class="hidden-xs"> phone number<span class="notify-multiple">s</span></span><span class="notify-text"> found</span></span>
+                        </div>
+                        <div id="extra-popup" class="notification">
+                            <img class="notification-icon" src="img/SVGs/icn_img_jobs.svg" alt="img/PNGs/icn_img_jobs@2x.png">
+                            <span>{{extraCount}}<span class="hidden-xs"> job<span class="notify-multiple">s</span></span><span class="notify-text"> found</span></span>
+                        </div>
+                    </div>
+                </div>
+
+				<section id="socialMedia" class="clearfix active">
+                    <div class="col-sm-5 left-side text-center">
+                        <h4>We are searching for the following <b>social media profiles</b></h4>
+                        <div class="icon-container">
+                            <ul id="social-media-groups" class="socialMedias list-unstyled clearfix">
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social twitter"><img src="img/SVGs/icn_img_twitter.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social facebook"><img src="img/SVGs/icn_img_facebook.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social instagram"><img src="img/SVGs/icn_img_instagram.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social linkedIn"><img src="img/SVGs/icn_img_linkedin.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social snapchat"><img src="img/SVGs/icn_img_snapchat.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social pinterest"><img src="img/SVGs/icn_img_pinterest.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social reddit"><img src="img/SVGs/icn_img_reddit.svg"></span></li>
+                                <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social youTube"><img src="img/SVGs/icn_img_youtube.svg"></span></li>
+                                <div class="hidden-xs hidden-sm">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social google-Plus"><img src="img/SVGs/icn_img_google+.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social whatsApp"><img src="img/SVGs/icn_img_whatsapp.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs hidden-sm">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social evernote"><img src="img/SVGs/icn_img_evernote.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social skype"><img src="img/SVGs/icn_img_skype.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social tinder"><img src="img/SVGs/icn_img_tinder.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social vimeo"><img src="img/SVGs/icn_img_vimeo.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs hidden-sm">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social soundcloud"><img src="img/SVGs/icn_img_soundcloud.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs hidden-sm">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social blogger"><img src="img/SVGs/icn_img_blogger.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs hidden-sm">
+                                    <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social tumblr"><img src="img/SVGs/icn_img_tumblr.svg"></span></li>
+                                </div>
+                                <div class="hidden-xs hidden-sm">
+                                   <li><img class="loading spinner" src="img/img_spin.gif" alt=""><span class="social flickr"><img src="img/SVGs/icn_img_flickr.svg"></span></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <p class="many-more">&amp; many more...</p>
+                    </div>
+
+                    <div class="col-sm-7 right-side">
+                        <h3><b>Social Media</b> Lookup</h3>
+                        <p>We search dozens of social networks. Social profiles may include secret pictures, surprising comments, as well as links to people they’re friends with. <b>If you are looking to catch a cheater</b>, social networks may be extremely helpful.
+                        </p>
+                    </div>
+                </section>
+
+                 <section id="criminalSearch" class="clearfix">
+                    <div data-fr-bind="fullTeaser" class="owner-wrapper visibility-hidden hidden">
+                        <p>
+                            <span class="owner-name">
+                                <span class="owner-label">Current Owner's Name:</span>
+                                <span class="owner-text">{{name}}</span>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="col-sm-5 left-side text-center">
+                        <img class="topImage" src="img/SVGs/icn_img_criminal_record.svg" alt="">
+                        <h4 class="">Searching Nationwide<br/> <b>Criminal Database</b></h4>
+                        <ul class="js-criminal-list criminal-list clearfix">
+    						<li class="blur-text"><span>Local Police</span></li>
+                            <li class="blur-text"><span>Felony Arrests</span></li>
+    						<li class="blur-text"><span>District Courts</span></li>
+                            <li class="blur-text"><span>Misdemeanors</span></li>
+                            <li class="blur-text"><span>Superior Courts</span></li>
+                            <li class="blur-text"><span>County Sheriffs</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-7 right-side">
+                        <h3><b>Criminal Database</b> Search</h3>
+                        <p>When a criminal record is found, the data may include details of the offense such as the date and location of the crime.</p>
+                        <p>Our records may contain, where available, arrest or conviction records, as well as outstanding warrants, traffic violations and speeding tickets. </p>
+                    </div>
+                </section>
+
+                <section id="emailBox" class="clearfix">
+                    <div data-fr-bind="fullTeaser" class="owner-wrapper visibility-hidden hidden">
+                        <p>
+                            <span class="owner-name">
+                                <span class="owner-label">Current Owner's Name:</span>
+                                <span class="owner-text">{{name}}</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 left-side text-center">
+                        <div class="animatedBox">
+                            <h1><b>Address & Contact<br> Info</b> Search</h1>
+                            <div class="animatedCards">
+                              <div class="card">
+                                <img src="img/SVGs/icon-email.svg">
+                                <p>Email Addresses</p> 
+                              </div>
+                                <div class="card">
+                                <img src="img/SVGs/icon-phone.svg">
+                                <p>Other Phone Numbers</p> 
+                              </div>
+                              <div class="card">
+                                <img src="img/SVGs/icon-contact.svg">
+                                <p>Other Contact Information</p> 
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 right-side">
+                        <h3>Emails, Addresses<br/> & Other <b>Contact Info</b></h3>
+                        <p>This search tries to find email addresses, as well as other phone numbers and addresses.</p>
+						<p>If you're looking to contact the owner, then this can be a huge help. <b>Plus, this search may uncover info that they may not have disclosed to you.</b></p>
+                    </div>
+                </section>
+
+                <section id="photoBox" class="clearfix">
+                    <div data-fr-bind="fullTeaser" class="owner-wrapper visibility-hidden hidden">
+                        <p>
+                            <span class="owner-name">
+                                <span class="owner-label">Current Owner's Name:</span>
+                                <span class="owner-text">{{name}}</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 left-side text-center">
+                        <h1>We are searching for<br> <b>online photos</b></h1>
+                        <div class="photo-loader">
+                            <!--  Safari gif issue
+                                Reference - https://stackoverflow.com/questions/7568855/restart-animated-gif-as-background-image -->
+                            <img class="img-responsive person-photo" src="img/profile-scan.gif?123" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 right-side" data-fr-bind="bv_searchData">
+                        <h3>Online <b>Photo Search</b></h3>
+                        <p>If we find an owner of {{formattedPhoneNumber}}, this search may uncover photos. It could include photos of their spouse, secret lovers, or newer photos they don't want you to know about. You may be surprised by the photos you find.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="jobBox" class="clearfix">
+                    <div data-fr-bind="fullTeaser" class="owner-wrapper visibility-hidden hidden">
+                        <p>
+                            <span class="owner-name">
+                                <span class="owner-label">Current Owner's Name:</span>
+                                <span class="owner-text">{{name}}</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 left-side text-center">
+                        <h4 class="">Searching for <b>education<br> and job history</b></h4>
+                    </div>
+
+                    <div class="col-sm-7 right-side">
+                        <h3><b>Education &amp; Job</b> History</h3>
+                        <p>This search uncovers someone’s education and career history. When available, the results are presented in a timeline that can include the year they graduated, positions they've held, and companies they've worked for. This information can potentially give you a sense of the owner’s wealth, and to help <b>see if they are telling the truth about their past.</b>
+                        </p>
+                    </div>
+                </section>
+
+                <section id="premiumBox" class="clearfix">
+					<div data-fr-bind="fullTeaser" class="owner-wrapper visibility-hidden hidden">
+                        <p>
+                            <span class="owner-name">
+                                <span class="owner-label">Current Owner's Name:</span>
+                                <span class="owner-text">{{name}}</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 left-side text-center">
+                        <h4 class="">Searching <b>Additional <br class="visible-sm">Data</b></h4>
+                        <div class="data_holder">
+                            <!--  Safari gif issue
+                                Reference - https://stackoverflow.com/questions/7568855/restart-animated-gif-as-background-image -->
+                            <img class="img-responsive" src="img/bg_check_animation.gif?123" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 right-side">
+                        <h3>Complete <b>Background Check</b></h3>
+                        <p>Our background checks offer 13 different categories of data to give you a comprehensive look at the publicly available information on someone.</p>
+                        <p>Our goal is to help you be better informed and to better understand people around you.</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="lock-section text-center">
+              <p class="lock"><img src="img/SVGs/lock.svg"> This search session is secured</p>
+              <p>BeenVerified deploys strategies, including Secure 256-bit SSL technology, to keep your personal information and payment from unauthorized 3rd parties.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="modal fade report-warning-dialog" tabindex="-1" role="dialog" data-show="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-header">
+                <i class="warning-icon"></i>
+            </div>
+            <div class="modal-content">
+                <header>
+                    <h3>Your results are ready</h3>
+                    <p class="modal-review-text">There are limits to how you may use BeenVerified reports. Please review the box below to continue to your report.</p>
+                </header>
+                <form id="fcra-confirm">
+                    <div class="terms">
+                        <p>I will not use information provided by BeenVerified for decisions about employment, insurance, tenant screening, consumer credit or any other purpose requiring Fair Credit Reporting Act (FCRA) compliance.</p>
+                        <div class="form-group">
+                            <label class="fcraCheckbox-wrapper" for="fcraCheckbox2">
+                                <input id="fcraCheckbox2" name="fcraCheckbox2" class="styled" type="checkbox" required>
+                                <label for="fcraCheckbox2" class="fcraCheckbox-box pull-left"></label> I Agree
+                            </label>
+                            <label for="fcraCheckbox2" class="error"></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="footer-a">
+        <div class="container">
+		  <div class="row">
+		    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+		      <h2 class="support">Live Customer Support Hours: <br class="visible-xs">Open daily 6 am - 11:30 pm EST</h2>
+			  <p class="disclaimer">
+				Disclaimer: BeenVerified’s mission is to give people easy and affordable access to public record information,
+				but BeenVerified does not provide private investigator services or consumer reports, and is not a consumer
+				reporting agency per the <a href="https://www.beenverified.com/about/fcra/" target="_blank" rel="nofollow">Fair
+				Credit Reporting Act</a>. You may not use our site or service or the information provided to make decisions
+				about employment, admission, consumer credit, insurance, tenant screening or any other purpose that would
+				require FCRA compliance. For more information governing permitted and prohibited uses, please review our <a
+				href="//www.beenverified.com/about/dos-donts/" target="_blank" rel="nofollow">“Do’s &amp; Don’ts”</a> and <a
+				href="//www.beenverified.com/faq/terms-conditions/" target="_blank" rel="nofollow">Terms &amp; Conditions</a>.
+			  </p>
+			</div>
+		  </div>
+        </div>
+      </div>
+      <div class="footer-b">
+        <div class="container">
+		  <div class="row">
+		    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+			  <div class="row footer-link">
+				<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+				  <p class="copy-right">&copy;2019 <strong>BeenVerified, Inc.</strong>, all rights reserved. BeenVerified&copy;, and the BeenVerified star mascot are registered trademarks of BeenVerified, Inc.</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 ftc">
+				  <p>
+					<a href="//www.beenverified.com/faq/terms-conditions/" target="_blank" rel="nofollow">Terms</a>
+					|
+					<a href="//www.beenverified.com/faq/privacy/" target="_blank" rel="nofollow">Privacy</a>
+				  </p>
+				</div>
+			  </div>
+			</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+	
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/g/jquery.cookie@1.4.1"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/amplify.store.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/handlebars.min.js"></script>
+
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/utility.js"></script>
+
+    <script src="js/framerida.helpers.js"></script>
+    <script src="js/framerida.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+    <script src="js/runner.js"></script>
+
+</body>
+
+</html>

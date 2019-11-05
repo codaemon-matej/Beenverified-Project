@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icn_img_facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BV-Phone-S1B-V2" transform="translate(-357.000000, -257.000000)" fill-rule="nonzero">
+            <g id="Content" transform="translate(247.000000, 149.000000)">
+                <g id="Left-content" transform="translate(35.000000, 30.000000)">
+                    <g id="Ovals" transform="translate(15.000000, 78.000000)">
+                        <g id="icn_img_facebook" transform="translate(60.000000, 0.000000)">
+                            <path d="M24.9996515,50 L24.9996515,50 C11.1927252,50 0,38.8072748 0,25.0003485 L0,25.0003485 C-0.000184882486,18.369908 2.63361779,12.0109697 7.32198192,7.32247484 C12.0103461,2.63397997 18.3692109,-2.5776256e-09 24.9996515,0 L24.9996515,0 C38.8069627,0 50,11.1930373 50,25.0003485 L50,25.0003485 C49.999615,38.8073876 38.8066905,50 24.9996515,50 Z" id="Path_2184" fill="#3E5C9A"></path>
+                            <path d="M21.1419188,40.015 L27.1782195,40.015 L27.1782195,24.8804615 L31.3898012,24.8804615 L31.838548,19.8127692 L27.1782195,19.8127692 L27.1782195,16.9265385 C27.1782195,15.7316154 27.4174589,15.2594615 28.571478,15.2594615 L31.838548,15.2594615 L31.838548,10 L27.6587727,10 C23.1643907,10 21.1419188,11.9813846 21.1419188,15.7724615 L21.1419188,19.8127692 L18,19.8127692 L18,24.9434615 L21.1398444,24.9434615 L21.1419188,40.015 Z" id="Path_2185" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

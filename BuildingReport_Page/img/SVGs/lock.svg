@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>lock</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-36.4%" y="-28.6%" width="172.7%" height="157.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.7325946   0 0 0 0 0.7325946   0 0 0 0 0.7325946  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BV-Phone-S6-V2" transform="translate(-578.000000, -646.000000)">
+            <g id="ConfidentialSearching" transform="translate(570.000000, 640.000000)">
+                <g id="lock" filter="url(#filter-1)" transform="translate(10.000000, 8.000000)">
+                    <path d="M2.32142857,7.02777778 L8.67857143,7.02777778 L8.67857143,3.92857143 C8.67857143,2.1730949 7.25547653,0.75 5.5,0.75 C3.74452347,0.75 2.32142857,2.1730949 2.32142857,3.92857143 L2.32142857,7.02777778 Z" id="Rectangle-9" stroke="#625069" stroke-width="1.5"></path>
+                    <path d="M1.5,4.66666667 L9.5,4.66666667 C10.3284271,4.66666667 11,5.33823954 11,6.16666667 L11,12.5 C11,13.3284271 10.3284271,14 9.5,14 L1.5,14 C0.671572875,14 1.01453063e-16,13.3284271 0,12.5 L0,6.16666667 C-1.01453063e-16,5.33823954 0.671572875,4.66666667 1.5,4.66666667 Z" id="Rectangle-8" fill="#625069"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
