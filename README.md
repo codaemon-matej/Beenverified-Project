@@ -1,2 +1,5 @@
 # Beenverified-Project
-BeenVerified is one of the largest background check websites that uses publicly available information to furnish detailed reports about the person being searched for. Based in New York, this organization makes access to background data quick and affordable.
+When any user visists to Beenverified to do an phone-number search, then the system does many background operations likes searching for social-accounts, photos, emails, job-profiles along-with the alternate phone-numbers that are associated with the entered phone-number.
+We have designed & developed this Building-Report page with fully responsive & interactive with some simple & descent effects & animations that keeps the user busy even when the background operations searches the millions of records to get & built the searched results or reports.
+
+
