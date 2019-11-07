@@ -7,3 +7,5 @@ We have designed & developed this Building-Report page with fully responsive & i
 ## Technologies Used
 Frontend: HTML, CSS, Jquery.  
 Backend: Codeignitor, Mysql.  
+Server: Amazon AWS (with SES, S3).  
+Tools: Git, JIRA.  
